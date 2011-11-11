@@ -17,6 +17,22 @@ document contains texts obtained from different freely available sources.
 
 <a name="setup">
 ## Git Setup
+# Ubuntu
+$ sudo apt-get build-dep git-core
+
+$ wget latest-git-version.tar.gz
+
+$ tar xvzf latest-git-version.tar.gz
+$ cd latest-git-version
+
+$ ./configure
+$ make
+$ sudo make install
+
+$ git --version
+$ cd ../;rm -r git-1.7.1 git-1.7.1.tar.gz 
+
+##
 
 git remote add remote_repo git@github.com:user/repo.git
 
