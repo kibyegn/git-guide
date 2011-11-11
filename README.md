@@ -21,7 +21,7 @@ document contains texts obtained from different freely available sources.
 
     $ sudo apt-get build-dep git-core
 
-    $ wget latest-git-version.tar.gz
+    $ wget latest-git-version.tar.gz # get it from http://git-scm.com/
 
     $ tar xvzf latest-git-version.tar.gz
     $ cd latest-git-version
@@ -45,6 +45,7 @@ where a "repository" is hosted on a remote server, which you checkout into a
 Simply run git init in the directory which contains the files you wish to track.
 
 For example,
+
     $ cd ~/code/project001/
     $ git init
 
