@@ -18,26 +18,23 @@ document contains texts obtained from different freely available sources.
 <a name="setup">
 ## Git Setup
 ### Ubuntu
-$ sudo apt-get build-dep git-core
 
-$ wget latest-git-version.tar.gz
+    $ sudo apt-get build-dep git-core
 
-$ tar xvzf latest-git-version.tar.gz
-$ cd latest-git-version
+    $ wget latest-git-version.tar.gz
 
-$ ./configure
-$ make
-$ sudo make install
+    $ tar xvzf latest-git-version.tar.gz
+    $ cd latest-git-version
 
-$ git --version
-$ cd ../;rm -r git-1.7.1 git-1.7.1.tar.gz 
+    $ ./configure
+    $ make
+    $ sudo make install
+
+    $ git --version
+    $ cd ../;rm -r git-1.7.1 git-1.7.1.tar.gz 
 
 
 ## Create a new project/repository?
-
-down vote
-	
-How do you create a new project/repository?
 
 A git repository is simply a directory containing a special .git directory.
 
@@ -48,20 +45,20 @@ where a "repository" is hosted on a remote server, which you checkout into a
 Simply run git init in the directory which contains the files you wish to track.
 
 For example,
-$ cd ~/code/project001/
-$ git init
+    $ cd ~/code/project001/
+    $ git init
 
 This creates a .git (hidden) folder in the current directory.
 
 To make a new project, run git init with an additional argument (the name of the
  directory to be created):
 
-$ git init project002
+    $ git init project002
 (This is equivalent to: mkdir project002 && cd project002 && git init)
 
 ##
 
-git remote add remote_repo git@github.com:user/repo.git
+    git remote add remote_repo git@github.com:user/repo.git
 
 
-git pull remote_repo branchname
+    git pull remote_repo branchname
