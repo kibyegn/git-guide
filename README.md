@@ -57,6 +57,10 @@ To make a new project, run git init with an additional argument (the name of the
     $ git init project002
 (This is equivalent to: mkdir project002 && cd project002 && git init)
 
+## Untrack a file without deleting it locally
+    $ echo "filename" >> .gitignore
+    $ git rm --cached filename
+
 ##
 
     git remote add remote_repo git@github.com:user/repo.git
