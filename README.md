@@ -61,7 +61,9 @@ To make a new project, run git init with an additional argument (the name of the
     $ echo "filename" >> .gitignore
     $ git rm --cached filename
 
-##
+## Turning on color options (only for git 1.5.5+)
+    $ git config --global color.ui "auto"
+## __
 
     git remote add remote_repo git@github.com:user/repo.git
 
