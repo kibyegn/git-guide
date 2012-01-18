@@ -84,6 +84,7 @@ To delete a remote branch
 
     $ git push remote_repo :new_branch
 or
+
     $ git push origin --delete new_branch
 
 
