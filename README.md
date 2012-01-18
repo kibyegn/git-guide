@@ -66,21 +66,26 @@ To make a new project, run git init with an additional argument (the name of the
     
 ## Adding a remote repository and pulling a specific branch
 
-    git remote add remote_repo git@github.com:user/repo.git
+    $ git remote add remote_repo git@github.com:user/repo.git
 
-    git pull remote_repo branchname
+    $ git pull remote_repo branchname
 Note: what 'git pull' does in the background is 'git fetch' and then 'git merge'
     
 ## Branching
-To create a branch. This creates a local branch.
+Create a local branch.
+
     $ git branch new_branch
 
 To push the local branch to your remote repository
+
     $ git push remote_repo new_branch
 
 To delete a remote branch
+
     $ git push remote_repo :new_branch
 or
     $ git push origin --delete new_branch
+
+
     
 
