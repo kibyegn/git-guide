@@ -70,6 +70,10 @@ To make a new project, run git init with an additional argument (the name of the
 
     $ git pull remote_repo branchname
 Note: what 'git pull' does in the background is 'git fetch' and then 'git merge'
+
+To list all branches in the remote branch
+
+    $ git ls-remote remote_repo
     
 ## Branching
 Create a local branch.
@@ -88,6 +92,7 @@ or
     $ git push origin --delete new_branch
 
 ## 
+
 
     
 
