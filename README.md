@@ -59,6 +59,7 @@ To make a new project, run git init with an additional argument (the name of the
 
 ## Commit Changes
 To commit one file. 
+
     $ git commit code/source.rb
 When this is executed, git will ask for a commit message so as to tell other 
 contributors or yourself what has changed. This will commit the file source.rb 
