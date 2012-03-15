@@ -57,6 +57,18 @@ To make a new project, run git init with an additional argument (the name of the
     $ git init project002
 (This is equivalent to: mkdir project002 && cd project002 && git init)
 
+## Commit Changes
+To commit one file. 
+    $ git commit code/source.rb
+When this is executed, git will ask for a commit message so as to tell other 
+contributors or yourself what has changed. This will commit the file source.rb 
+in the directory ./code/
+
+To commit All modified files execute the following command. Note that this will 
+not commit new files that are yet to be tracked by git. See git add command for
+this
+    $ git commit -a # -a flag pulls in all modified files
+
 ## Untrack a file without deleting it locally
     $ echo "filename" >> .gitignore
     $ git rm --cached filename
