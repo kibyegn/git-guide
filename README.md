@@ -68,6 +68,7 @@ in the directory ./code/
 To commit All modified files execute the following command. Note that this will 
 not commit new files that are yet to be tracked by git. See git add command for
 this
+
     $ git commit -a # -a flag pulls in all modified files
 
 ## Untrack a file without deleting it locally
