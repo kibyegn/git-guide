@@ -55,7 +55,7 @@ To make a new project, run git init with an additional argument (the name of the
  directory to be created):
 
     $ git init <name of directory>
-(This is equivalent to: mkdir project002 && cd project002 && git init)
+(This is equivalent to: mkdir <name of directory> && cd <name of directory> && git init)
 
 ## Commit Changes
 To commit one file. 
@@ -94,6 +94,7 @@ Create a local branch.
     $ git branch <new branch>
 
 ProTip: To create a new branch and switch to it automatically;
+
     $ git branch -b <branch name>
 
 To push the local branch to your remote repository
@@ -108,6 +109,7 @@ or
     $ git push <remote repo> --delete <branch name>
 
 To delete a local branch
+
     $ git branch -d <branch name>
 
 To merge branches
@@ -118,6 +120,7 @@ To merge branches
 To checkout a commit for inspection and discardable experiments. This puts the repo
 in a 'detached HEAD' state. You can make changes and commit them or discard them
 without impacting any of the branches by performing another checkout.
+
     $ git checkout <commit hash>
 ## 
 
