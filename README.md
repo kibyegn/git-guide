@@ -84,7 +84,7 @@ this
     $ git pull <remote repo> <branch name>
 Note: what 'git pull' does in the background is 'git fetch' and then 'git merge'
 
-To list all branches in the remote branch
+To list all branches in a remote repo 
 
     $ git ls-remote --heads <remote repo>
 
