@@ -86,7 +86,10 @@ Note: what 'git pull' does in the background is 'git fetch' and then 'git merge'
 
 To list all branches in the remote branch
 
-    $ git ls-remote <remote repo>
+    $ git ls-remote --heads <remote repo>
+
+ls-remote command returns SHA1 hash of the latest commit for that reference. The --heads switch lists
+only branch names since ls-remote can list tags too.
     
 ## Branching
 Create a local branch.
