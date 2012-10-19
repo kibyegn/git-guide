@@ -46,7 +46,7 @@ Simply run git init in the directory which contains the files you wish to track.
 
 For example,
 
-    $ cd ~/code/project001/
+    $ cd <project directory path>
     $ git init
 
 This creates a .git (hidden) folder in the current directory.
@@ -54,56 +54,70 @@ This creates a .git (hidden) folder in the current directory.
 To make a new project, run git init with an additional argument (the name of the
  directory to be created):
 
-    $ git init project002
+    $ git init <name of directory>
 (This is equivalent to: mkdir project002 && cd project002 && git init)
 
 ## Commit Changes
 To commit one file. 
 
-    $ git commit code/source.rb
+    $ git commit <file name>
 When this is executed, git will ask for a commit message so as to tell other 
-contributors or yourself what has changed. This will commit the file source.rb 
-in the directory ./code/
+contributors or yourself what has changed. 
 
 To commit All modified files execute the following command. Note that this will 
-not commit new files that are yet to be tracked by git. See git add command for
+not commit new files that are yet to be tracked by git. See git 'add' command for
 this
 
-    $ git commit -a # -a flag pulls in all modified files
+    $ git commit -a # -a switch pulls in all modified files
 
 ## Untrack a file without deleting it locally
-    $ echo "filename" >> .gitignore
-    $ git rm --cached filename
+    $ echo <filename> >> .gitignore
+    $ git rm --cached <filename>
 
 ## Turning on color options (only for git 1.5.5+)
     $ git config --global color.ui "auto"
     
 ## Adding a remote repository and pulling a specific branch
 
-    $ git remote add remote_repo git@github.com:user/repo.git
+    $ git remote add <repo name> <repo url>
 
-    $ git pull remote_repo branchname
+    $ git pull <remote repo> <branch name>
 Note: what 'git pull' does in the background is 'git fetch' and then 'git merge'
 
 To list all branches in the remote branch
 
-    $ git ls-remote remote_repo
+    $ git ls-remote <remote repo>
     
 ## Branching
 Create a local branch.
 
-    $ git branch new_branch
+    $ git branch <new branch>
+
+ProTip: To create a new branch and switch to it automatically;
+    $ git branch -b <branch name>
 
 To push the local branch to your remote repository
 
-    $ git push remote_repo new_branch
+    $ git push <remote repo> <branch name>
 
 To delete a remote branch
 
-    $ git push remote_repo :new_branch
+    $ git push <remote repo> <branch name>
 or
 
-    $ git push origin --delete new_branch
+    $ git push <remote repo> --delete <branch name>
 
+To delete a local branch
+    $ git branch -d <branch name>
+
+To merge branches
+
+    $ git merge <merging branch> <branch to be merged>
+    
+## Reverting to previous commits
+To checkout a commit for inspection and discardable experiments. This puts the repo
+in a 'detached HEAD' state. You can make changes and commit them or discard them
+without impacting any of the branches by performing another checkout.
+    $ git checkout <commit hash>
 ## 
 
